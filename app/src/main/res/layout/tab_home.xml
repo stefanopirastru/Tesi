@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mirco.civichacking.MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageGoogle"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/profile"
+                    />
+
+                <TextView
+                    android:id="@+id/nameGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageGoogle"
+                    android:layout_marginTop="17dp"
+                    android:layout_toEndOf="@+id/imageGoogle"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/mailGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/nameGoogle"
+                    android:layout_below="@+id/nameGoogle"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/butLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imageGoogle"
+                    android:layout_alignStart="@+id/imageGoogle"
+                    android:layout_below="@+id/imageGoogle"
+                    android:text="Logout"
+                    android:textColor="#FFFFFF"
+                    android:background="#2d7cbe"/>
+
+                <TextView
+                    android:id="@+id/visit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ricercaHome"
+                    android:textSize="30dp"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/butLogout"
+                    android:layout_alignLeft="@id/imageGoogle"
+                    android:layout_marginTop="20dp"/>
+
+              <ImageView
+                  android:id="@+id/fiera"
+                  android:layout_width="100dp"
+                  android:layout_height="100dp"
+                  android:layout_alignLeft="@id/visit"
+                  android:layout_below="@id/visit"
+                  android:layout_marginTop="15dp"
+                  android:src="@drawable/fiera1"/>
+
+            <TextView
+                android:id="@+id/Fiera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/fiera"
+                android:layout_alignStart="@+id/mailGoogle"
+                android:text="@string/Fiera"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textfiera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/fiera"
+                    android:layout_alignStart="@+id/mailGoogle"
+                    android:text="@string/fiera"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/manifestazione"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignLeft="@id/visit"
+                    android:layout_below="@id/fiera"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/manifestazione"/>
+
+            <TextView
+                android:id="@+id/Manifestazione"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/manifestazione"
+                android:layout_alignStart="@+id/mailGoogle"
+                android:text="@string/Manifestazione"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textmanifetazione"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/spettacolo"
+                    android:layout_alignBottom="@id/manifestazione"
+                    android:layout_alignStart="@+id/textfiera"
+                    android:text="@string/manifestazione"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+
+                <ImageView
+                    android:id="@+id/spettacolo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignLeft="@id/visit"
+                    android:layout_below="@id/manifestazione"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/spettacolo1"/>
+
+            <TextView
+                android:id="@+id/Spettacolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/spettacolo"
+                android:layout_alignStart="@+id/mailGoogle"
+                android:text="@string/Spettacolo"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textspettacolo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/spettacolo"
+                    android:layout_toEndOf="@+id/imageGoogle"
+                    android:text="@string/spettacolo"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+
+                <ImageView
+                    android:id="@+id/sport"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignLeft="@id/visit"
+                    android:layout_below="@id/spettacolo"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/sport1"/>
+
+            <TextView
+                android:id="@+id/Sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/sport"
+                android:layout_alignStart="@+id/mailGoogle"
+                android:text="@string/Sport"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textsport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textspettacolo"
+                    android:layout_alignBottom="@+id/sport"
+                    android:text="@string/sport"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

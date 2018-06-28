@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mirco.civichacking.MainActivity">
+
+     <RelativeLayout
+         android:id="@+id/relativeLayout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:visibility="gone">
+
+         <TextView
+             android:id="@+id/textview"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="200dp"
+             android:text="CONNESSIONE DI RETE ASSENTE"
+             android:textColor="#000000"
+             android:textSize="30dp"/>
+
+         <ImageView
+             android:id="@+id/image"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/nosignal"
+             android:layout_below="@id/textview"
+             android:layout_alignLeft="@id/textview"
+             android:layout_alignRight="@id/textview"
+
+             />
+
+     </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/chart_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/adderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/recyclButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@android:color/holo_red_light"
+         />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/recyclButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:src="@android:drawable/stat_notify_sync_noanim"
+        app:backgroundTint="@android:color/holo_green_light"
+         />
+
+
+</RelativeLayout>
+

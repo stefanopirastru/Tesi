@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Civic Hacking</string>
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="content_description">ImageApp</string>
+
+    <string name="tab2">Eventi</string>
+    <string name="tab3">Preferiti</string>
+
+   <string name="ricercaHome">Ricerca gli eventi per categoria</string>
+    <string name="fiera">Fiere, Sagre, Mercati, Festival, Feste, Esposizioni, Ecc... </string>
+    <string name="manifestazione">Manifestazioni, Cortei, Parate, Scioperi, Flash Mob, Ecc...</string>
+    <string name="spettacolo">Rappresentazioni teatrali, Concerti, Circo, Jam Session, Cabaret Ecc...   </string>
+    <string name="sport">Eventi sportivi, Partite di calcio, Maratone, Gare automobilistiche, Gare ciclistiche, Ecc...</string>
+
+
+    <string name="suggerimento">Inserisci la ricerca</string>
+    <string name="result">Risultato della ricerca</string>
+    <string name="noresult">Nessuna corrispondenza trovata</string>
+
+    <string name="inserimento">Inserisci l\'evento</string>
+    <string name="name_event">Nome evento</string>
+    <string name="place">Luogo</string>
+    <string name="city">Città</string>
+    <string name="date">Data</string>
+    <string name="time">Ora</string>
+    <string name="description">Descrizione</string>
+    <string name="category">Categoria</string>
+    <string-array name="split_array">
+        <item> Scegli la categoria</item>
+        <item>Fiera</item>
+        <item>Manifestazione</item>
+        <item>Spettacolo</item>
+        <item>Sport</item>
+
+    </string-array>
+
+    <string name="map">Visualizza l\'evento sulla mappa</string>
+    <string name="favorites">Aggiungi l\'evento ai preferiti</string>
+    <string name="calendar">Aggiungi l\'evento al calendario </string>
+    <string name="delete">Rimuovi l\'evento dai preferiti</string>
+
+    <string name="insert">Inserisci</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_insert">Insert</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="dateinbutton">data inizio</string>
+    <string name="datefibutton">data fine</string>
+    <string name="timebutton">Scegli l\'ora</string>
+
+    <string name="namehint">Es: Concerto</string>
+    <string name="placehint">Es: Arena di Verona</string>
+    <string name="cityhint">Es: Verona</string>
+    <string name="datehint">gg/mm/aaaa</string>
+    <string name="timehint">hh:mm</string>
+    <string name="descriptionhint">Descrizione generale dell\'evento</string>
+
+    <string name="Fiera">Fiera</string>
+    <string name="Manifestazione">Manifestazione</string>
+    <string name="Sport">Sport</string>
+    <string name="Spettacolo">Spettacolo</string>
+
+
+
+</resources>

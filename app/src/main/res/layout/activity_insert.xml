@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mirco.civichacking.Insert">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2d7cbe">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/content_description"
+            app:srcCompat="@drawable/sfondo" />
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/titleInsert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/inserimento"
+                    android:textColor="#000000"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/titleInsert"
+                    android:layout_below="@id/titleInsert"
+                    android:padding="10dp"
+                    android:text="@string/name_event"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/nameLabeleditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/nameLabel"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/nameLabel"
+                    android:inputType="textPersonName"
+                    android:hint="@string/namehint"/>
+
+
+                <TextView
+                    android:id="@+id/placeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/titleInsert"
+                    android:layout_below="@id/nameLabel"
+                    android:padding="10dp"
+                    android:text="@string/place"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/placeLabeleditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/placeLabel"
+                    android:layout_alignLeft="@id/nameLabeleditText"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="@string/placehint"/>
+
+                <TextView
+                    android:id="@+id/cityLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/titleInsert"
+                    android:layout_below="@id/placeLabel"
+                    android:padding="10dp"
+                    android:text="@string/city"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/cityLabeleditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/cityLabel"
+                    android:layout_alignLeft="@id/nameLabeleditText"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="@string/cityhint"/>
+
+
+                <TextView
+                    android:id="@+id/dateinLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/titleInsert"
+                    android:layout_below="@id/cityLabel"
+                    android:padding="10dp"
+                    android:text="@string/date"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/dateintext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/datehint"
+                    android:textSize="25dp"
+                    android:textColor="#000000"
+                    android:layout_alignBaseline="@+id/dateinLabel"
+                    android:layout_alignLeft="@id/cityLabeleditText"/>
+
+                <Button
+                    android:id="@+id/dateinbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/cityLabeleditText"
+                    android:layout_alignRight="@+id/cityLabeleditText"
+                    android:layout_alignBaseline="@+id/dateintext"
+                    android:layout_toEndOf="@+id/spinner"
+                    android:layout_toRightOf="@+id/spinner"
+                    android:background="#2d7cbe"
+                    android:text="@string/dateinbutton"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/datefiLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/titleInsert"
+                    android:layout_below="@id/dateinLabel"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    />
+
+
+                <TextView
+                    android:id="@+id/datefitext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/datehint"
+                    android:textSize="25dp"
+                    android:textColor="#000000"
+                    android:layout_alignBaseline="@+id/datefiLabel"
+                    android:layout_alignLeft="@id/cityLabeleditText"/>
+
+                <Button
+                    android:id="@+id/datefibutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/cityLabeleditText"
+                    android:layout_alignRight="@+id/cityLabeleditText"
+                    android:layout_alignBaseline="@+id/datefitext"
+                    android:layout_toEndOf="@+id/spinner"
+                    android:layout_toRightOf="@+id/spinner"
+                    android:background="#2d7cbe"
+                    android:text="@string/datefibutton"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    android:id="@+id/timeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/titleInsert"
+                    android:layout_below="@id/datefiLabel"
+                    android:padding="10dp"
+                    android:text="@string/time"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/timehint"
+                    android:textSize="25dp"
+                    android:textColor="#000000"
+                    android:layout_alignBaseline="@+id/timeLabel"
+                    android:layout_alignLeft="@id/cityLabeleditText"/>
+
+                <Button
+                    android:id="@+id/timebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/spinner"
+                    android:layout_alignEnd="@+id/datefibutton"
+                    android:layout_alignRight="@+id/datefibutton"
+                    android:layout_alignBaseline="@id/timetext"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toEndOf="@+id/spinner"
+                    android:layout_toRightOf="@+id/spinner"
+                    android:background="#2d7cbe"
+                    android:text="@string/timebutton"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    android:id="@+id/categoryLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/titleInsert"
+                    android:layout_below="@id/timeLabel"
+                    android:padding="10dp"
+                    android:text="@string/category"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@id/dateintext"
+                    android:layout_alignBaseline="@id/categoryLabel"
+                    >
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/descriptionLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/titleInsert"
+                    android:layout_below="@id/categoryLabel"
+                    android:padding="10dp"
+                    android:text="@string/description"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/descriptionLabeleditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/descriptionLabel"
+                    android:layout_alignLeft="@id/nameLabeleditText"
+                    android:layout_marginRight="10dp"
+                    android:lines="6"
+                    android:maxLength="140"
+                    android:inputType="textMultiLine"
+                    android:gravity="top|left"
+                    android:scrollbars="vertical"
+                    android:hint="@string/descriptionhint"/>
+
+
+    <RelativeLayout
+        android:layout_below="@id/descriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/insertButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="150dp"
+                    android:background="#2d7cbe"
+                    android:text="@string/insert"
+                    android:textColor="#FFFFFF"/>
+
+            </RelativeLayout>
+            </RelativeLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+</RelativeLayout>
+
+

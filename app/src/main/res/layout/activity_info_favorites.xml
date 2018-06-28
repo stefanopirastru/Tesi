@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mirco.civichacking.InfoFavorites">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2d7cbe">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/content_description"
+            app:srcCompat="@drawable/sfondo" />
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/nomeeventolabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/name_event"
+                    android:textColor="#FA0000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nomeevento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nomeeventolabel"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/nomeeventolabel"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/luogoeventolabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/nomeeventolabel"
+                    android:layout_below="@id/nomeeventolabel"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/place"
+                    android:textColor="#FA0000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/luogoevento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/luogoeventolabel"
+                    android:layout_alignLeft="@id/nomeevento"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/luogoeventolabel"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/cittaeventolabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/luogoeventolabel"
+                    android:layout_below="@id/luogoeventolabel"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/city"
+                    android:textColor="#FA0000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cittaevento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/cittaeventolabel"
+                    android:layout_alignLeft="@id/luogoevento"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/cittaeventolabel"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:id="@+id/dataeventolabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/cittaeventolabel"
+                    android:layout_below="@id/cittaeventolabel"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/date"
+                    android:textColor="#FA0000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dataevento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/dataeventolabel"
+                    android:layout_alignLeft="@id/cittaevento"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/dataeventolabel"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/oraeventolabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignLeft="@id/dataeventolabel"
+                    android:layout_below="@id/dataeventolabel"
+                    android:text="@string/time"
+                    android:textSize="20dp"
+                    android:textColor="#FA0000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/oraevento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/oraeventolabel"
+                    android:layout_alignLeft="@id/dataevento"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/oraeventolabel"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/categoriaeventolabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/dataeventolabel"
+                    android:layout_below="@id/oraeventolabel"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/category"
+                    android:textColor="#FA0000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/categoriaevento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/categoriaeventolabel"
+                    android:layout_alignLeft="@id/oraevento"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/categoriaeventolabel"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:id="@+id/descrizioneeventolabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/categoriaeventolabel"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/description"
+                    android:textColor="#FA0000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/descrizioneevento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descrizioneeventolabel"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ImageButton
+                    android:id="@+id/mapButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignEnd="@+id/luogoeventolabel"
+                    android:layout_below="@+id/descrizioneevento"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/ic_maps" />
+
+                <TextView
+                    android:id="@+id/mapText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/mapButton"
+                    android:layout_toEndOf="@+id/categoriaeventolabel"
+                    android:text="@string/map"
+                    android:layout_marginTop="12sp"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ImageButton
+                    android:id="@+id/calButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/mapButton"
+                    android:layout_alignLeft="@id/mapButton"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/ic_calendar"/>
+
+                <TextView
+                    android:id="@+id/calText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/mapText"
+                    android:layout_alignTop="@+id/calButton"
+                    android:text="@string/calendar"
+                    android:textColor="#000000"
+                    android:layout_marginTop="12sp"
+                    android:textSize="20dp" />
+
+                <ImageButton
+                    android:id="@+id/delButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/calButton"
+                    android:layout_alignLeft="@id/calButton"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_trash"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/delText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/calText"
+                    android:layout_alignTop="@+id/delButton"
+                    android:text="@string/delete"
+                    android:textColor="#000000"
+                    android:layout_marginTop="12sp"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.constraint.ConstraintLayout>

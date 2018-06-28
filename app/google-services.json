@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "633128718144",
+    "firebase_url": "https://civic-hacking-198610.firebaseio.com",
+    "project_id": "civic-hacking-198610",
+    "storage_bucket": "civic-hacking-198610.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633128718144:android:e0114b0c72ed60c7",
+        "android_client_info": {
+          "package_name": "com.example.mirco.civichacking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633128718144-o73ckpmgt142vjkrh8vopa452ejmujal.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mirco.civichacking",
+            "certificate_hash": "1b1494462f0dd7890fcd2da1ed2fa3840b0079d2"
+          }
+        },
+        {
+          "client_id": "633128718144-hbuj7ndkrp6q0toe193fjnmtuertveci.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "633128718144-bvepgib3e0n5628vrbeia2c8e6f5qp3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTCCYqnuT85qYgoYynxYamtt0J3szCLBM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633128718144-hbuj7ndkrp6q0toe193fjnmtuertveci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
